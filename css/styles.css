@@ -28,15 +28,10 @@ body {
 .link {
   text-decoration: none;
   color: currentColor;
+
 }
-.link:hover {
-  color: var(--akcent-cl);
-}
-.pic-email:hover,
-.pic-smartphone:hover,
-.link:hover {
-  fill: #2196f3;
-}
+
+
 
 .list {
   list-style: none;
@@ -75,7 +70,7 @@ body {
 }
 .header-container{
   display: flex;
-  align-items: center;
+
 
 }
 .logo {
@@ -99,7 +94,10 @@ body {
   display: flex;
   align-items: center;
 
-
+}
+.link-header{
+  display: flex;
+  align-items: center;
 }
 .list-block:last-child {
   margin-right: 0;
@@ -110,6 +108,7 @@ body {
   color: #212121;
   margin-right: 50px;
 }
+
 .header-nav-list-item:last-child {
   margin-right: 0;
 }
@@ -117,11 +116,14 @@ body {
   color: var(--akcent-cl);
 }
 .header-nav-list-contacti-item {
+  display: flex;
   margin-right: 50px;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #757575;
+
 }
+
 .pic-email{
 margin-right: 10px;
 }
@@ -132,11 +134,17 @@ margin-right: 10px;
 .header-nav-list-contacti-item:last-child {
   margin-right: 0;
 }
+.header-nav-list-contacti-item:hover,
+.header-nav-list-item:hover,
+.link:focus {
+  fill: var(--akcent-cl);
+  color: var(--akcent-cl);
+}
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  
+
 }
 
 .address-maps {
@@ -190,6 +198,11 @@ margin-right: 10px;
   height: 44px;
   border-radius: 50%;
 }
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+      background-color: var(--akcent-cl);
+ }
+
 
 
 /****************************
@@ -340,16 +353,19 @@ margin-right: 10px;
     height: 44px;
     background-color:var(--main-background-cl);
     border-radius: 50%;
-    fill:var(--main-background-cl);
+    color: var(--background-cl-icon);
 }
   
 .social-icon{
-  fill: var(--background-cl-icon);
+  fill: currentColor;
  }
- .social-item :hover{
-      fill: var(--main-background-cl); 
+ .social-link:hover,
+ .social-link:focus {
+      color:var(--main-background-cl); 
       background-color: var(--akcent-cl);
  }
+
+
 .profession:last-child {
   margin-bottom: 0;
 }
@@ -441,15 +457,13 @@ margin-right: 10px;
 }
 
 .portfolio-info {
-  padding-left: 24px;
-  padding-bottom: 20px;
+  padding:20px 24px;
   border-right: 1px solid #eee ;
   border-bottom: 1px solid #eee ;
   border-left: 1px solid #eee ;
 }
-.portfolio-title {
-  margin-top: 0;
-  margin-bottom: 4px;
+.portfolio-tittle {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
